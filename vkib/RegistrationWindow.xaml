@@ -1,0 +1,28 @@
+<Window x:Class="vk1.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Registration" Height="300" Width="350">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Username:"/>
+            <TextBox x:Name="txtUsername"/>
+            <TextBlock Text="Password:" Margin="0,10,0,0"/>
+            <PasswordBox x:Name="txtPassword"/>
+            <TextBlock Text="First Name:" Margin="0,10,0,0"/>
+            <TextBox x:Name="txtFirstName"/>
+            <TextBlock Text="Last Name:" Margin="0,10,0,0"/>
+            <TextBox x:Name="txtLastName"/>
+            <TextBlock Text="Date of Birth (YYYY-MM-DD):" Margin="0,10,0,0"/>
+            <TextBox x:Name="txtDateOfBirth"/>
+            <TextBlock Text="Marital Status:" Margin="0,10,0,0"/>
+            <ComboBox x:Name="cmbMaritalStatus">
+                <ComboBoxItem>Single</ComboBoxItem>
+                <ComboBoxItem>Married</ComboBoxItem>
+                <ComboBoxItem>Divorced</ComboBoxItem>
+                <ComboBoxItem>Widowed</ComboBoxItem>
+            </ComboBox>
+            <Button Content="Register" Click="Register_Click" Margin="0,20,0,0"/>
+            <TextBlock x:Name="lblErrorMessage" Foreground="Red" Visibility="Collapsed" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
